@@ -3,6 +3,7 @@ package com.neppplus.kotlinbasic01_genie
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -22,6 +23,12 @@ class MainActivity : AppCompatActivity() {
 
         }
 
+        smallBtn.setOnClickListener {
+
+            Toast.makeText(this, "작은 버튼 눌림", Toast.LENGTH_SHORT).show()
+
+
+        }
 
 
     }
